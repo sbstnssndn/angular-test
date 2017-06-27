@@ -6,15 +6,46 @@ angular.
   component('aprobacionCandidatos', {
     // Note: The URL is relative to our `index.html` file
     templateUrl: 'aprobacion-candidatos/aprobacion-candidatos.template.html',
-    controller: ['$routeParams', 'Aprobacion',
-      function AprobacionCandidatosController($routeParams, Aprobacion) {
+    controller: ['$scope', '$routeParams', 'Aprobacion',
+      function AprobacionCandidatosController($scope, $routeParams, Aprobacion) {
         var self = this;
+        $scope.datosJson = 'aprobaciones/'+$routeParams.candidatoId+'-g.json';
 
-        self.aprobaciones = Aprobacion.query({candidatoId: $routeParams.candidatoId}, function(aprobaciones){
+        $scope.dataSource = {
+            chart: {
+                caption: "Harry's SuperMart",
+                subCaption: "Top 5 stores in last month by revenue",
+            },
+            data:[{
+                label: "Bakersfield Central",
+                value: "880000"
+            },
+            {
+                label: "Garden Groove harbour",
+                value: "730000"
+            },
+            {
+                label: "Los Angeles Topanga",
+                value: "590000"
+            },
+            {
+                label: "Compton-Rancho Dom",
+                value: "520000"
+            },
+            {
+                label: "Daly City Serramonte",
+                value: "930000"
+            }]
+          };
+
+        self.aprobaciones = Aprobacion.query({candidatoId: $routeParams.candidatoId}, function(aprobaciones) {
           //self.graficoAprobacion(aprobaciones);
         });
 
-        
+      }
+    ]
+  });
+
 /*
         self.graficoAprobacion = function graficoAprobacion(aprobaciones) {
           // Load the Visualization API and the piechart package.
@@ -56,6 +87,3 @@ angular.
         	chart.draw(data, options);
         };
 */
-      }
-    ]
-  });

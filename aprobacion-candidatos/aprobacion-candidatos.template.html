@@ -11,12 +11,21 @@ la variable "aprobacion" viene de aprobacion-candidatos.component.js
   <h2>Desaprobación: {{aprob.desaprobacion}}%</h1>
   <hr />
 </div>
-
-<div style="width: 100px; height: 100px; background-color: black; color: #fff;">
-asdasdas
-</div>
-
-<div id="chart_div"></div>
+<!--
+<fusioncharts
+    width="600"
+    height="400"
+    type="column2d"
+    datasource="{{dataSource}}"
+></fusioncharts>
+-->
+<fusioncharts
+ dataformat="jsonurl"
+ datasource="{{datosJson}}"
+ type="mscolumn2d"
+ width="600"
+ height="400"
+></fusioncharts>
 
 <!--
 <ul>

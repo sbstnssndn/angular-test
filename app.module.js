@@ -7,5 +7,6 @@ angular.module('testApp', [
   'ngRoute',
   'detalleCandidatos',
   'listaCandidatos',
-  'aprobacionCandidatos'
+  'aprobacionCandidatos',
+  'ng-fusioncharts'
 ]);

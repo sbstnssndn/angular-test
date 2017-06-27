@@ -1,0 +1,70 @@
+ {
+    "chart": {
+        "caption": "Nivel de Aprobación",
+        "xAxisname": "Fecha",
+        "yAxisName": "Aprobación (%)",
+        "numberSuffix": "%",
+        "plotFillAlpha": "80",
+        "paletteColors": "#0075c2,#ff0000",
+        "baseFontColor": "#333333",
+        "baseFont": "Helvetica Neue,Arial",
+        "captionFontSize": "14",
+        "subcaptionFontSize": "14",
+        "subcaptionFontBold": "0",
+        "showBorder": "0",
+        "bgColor": "#ffffff",
+        "showShadow": "0",
+        "canvasBgColor": "#ffffff",
+        "canvasBorderAlpha": "0",
+        "divlineAlpha": "100",
+        "divlineColor": "#999999",
+        "divlineThickness": "1",
+        "divLineDashed": "1",
+        "divLineDashLen": "1",
+        "usePlotGradientColor": "0",
+        "showplotborder": "0",
+        "valueFontColor": "#ffffff",
+        "placeValuesInside": "1",
+        "showHoverEffect": "1",
+        "rotateValues": "1",
+        "showXAxisLine": "1",
+        "xAxisLineThickness": "1",
+        "xAxisLineColor": "#999999",
+        "showAlternateHGridColor": "0",
+        "legendBgAlpha": "0",
+        "legendBorderAlpha": "0",
+        "legendShadow": "0",
+        "legendItemFontSize": "10",
+        "legendItemFontColor": "#666666"
+    },
+    "categories": [
+        {
+            "category": [
+                { "label": "18/07" },
+                { "label": "17/05" },
+                { "label": "17/06" },
+                { "label": "17/08" }
+            ]
+        }
+    ],
+    "dataset": [
+        {
+            "seriesname": "Aprobación",
+            "data": [
+                { "value": "10" },
+                { "value": "20" },
+                { "value": "30" },
+                { "value": "40" }
+            ]
+        },
+        {
+            "seriesname": "Desaprobación",
+            "data": [
+                { "value": "90" },
+                { "value": "80" },
+                { "value": "70" },
+                { "value": "60" }
+            ]
+        }
+    ]
+}
