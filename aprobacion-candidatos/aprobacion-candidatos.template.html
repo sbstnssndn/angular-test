@@ -13,26 +13,16 @@ la variable "aprobacion" viene de aprobacion-candidatos.component.js
 </div>
 <!--
 <fusioncharts
-    width="600"
-    height="400"
-    type="column2d"
-    datasource="{{dataSource}}"
-></fusioncharts>
--->
-<fusioncharts
  dataformat="jsonurl"
  datasource="{{datosJson}}"
  type="mscolumn2d"
  width="600"
  height="400"
 ></fusioncharts>
-
-<!--
-<ul>
-  <li ng-repeat="aprobacion in $ctrl.aprobaciones">
-    <span>{{aprobacion.fecha}}</span>
-    <p>{{aprobacion.aprobacion}}%</p>
-    <p>{{aprobacion.desaprobacion}}%</p>
-  </li>
-</ul>
 -->
+<fusioncharts
+    width="600"
+    height="400"
+    type="mscolumn2d"
+    datasource="{{datosFinal}}"
+></fusioncharts>
