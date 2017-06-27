@@ -1,0 +1,27 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+      <!--La variable query no existe, se crea al cargar el HTML-->
+      Buscar: <input ng-model="$ctrl.query" />
+    </div>
+    <div class="col-md-10">
+
+      <!--Body content-->
+      <ul class="phones">
+        <li ng-repeat="candidato in $ctrl.candidatos | filter:$ctrl.query"
+            class="thumbnail phone-list-item">
+          <!--<img ng-src="{{candidato.img}}" title="{{candidato.nombre}}" />-->
+          <h2>{{candidato.cdtoId}}: {{candidato.cdtoNombre}}</h2>
+          <p>{{candidato.cdtoEdad}}</p>
+          <p>{{candidato.ptdoId.ptdoNombre}}</p>
+          <a href="#!/candidatos/{{candidato.cdtoId}}" class="thumb">
+            <img ng-src="{{candidato.cdtoImagen}}" title="{{candidato.cdtoNombre}}" style="width: 180px; height: 180px;" />
+          </a>
+          <hr />
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es" ng-app="testApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Pruebita</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="app.animations.css" />
+
+    <script type="text/javascript" src="lib/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="lib/angular.js"></script>
+    <script type="text/javascript" src="lib/angular-animate/angular-animate.js"></script>
+    <script type="text/javascript" src="lib/angular-resource/angular-resource.js"></script>
+    <script type="text/javascript" src="lib/angular-route/angular-route.js"></script>
+    <!--
+    <script type="text/javascript" src="lib/angular-google-chart/ng-google-chart.js" type="text/javascript"></script>
+    -->
+    <!-- A module needs to be included before other files that add features
+    to that module (componentes, controllers, services, filters) -->
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="app.animations.js"></script>
+    <script src="lista-candidatos/lista-candidatos.module.js"></script>
+    <script src="lista-candidatos/lista-candidatos.component.js"></script>
+    <script src="detalle-candidatos/detalle-candidatos.module.js"></script>
+    <script src="detalle-candidatos/detalle-candidatos.component.js"></script>
+    <script src="aprobacion-candidatos/aprobacion-candidatos.module.js"></script>
+    <script src="aprobacion-candidatos/aprobacion-candidatos.component.js"></script>
+    <script src="core/candidato/candidato.module.js"></script>
+    <script src="core/candidato/candidato.service.js"></script>
+    <script src="core/aprobacion/aprobacion.module.js"></script>
+    <script src="core/aprobacion/aprobacion.service.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+      <a href="#!">Home</a>
+      <hr />
+    </header>
+
+    <div class="view-container">
+      <div ng-view class="view-frame"></div>
+    </div>
+
+    <footer>
+      <div chart1></div>
+      <hr />
+      <h3>Footer</h3>
+    </footer>
+
+  </body>
+</html>

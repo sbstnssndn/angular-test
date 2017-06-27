@@ -1,0 +1,29 @@
+<!--
+la variable "aprobacion" viene de aprobacion-candidatos.component.js
+-->
+<p>
+  datitos:
+</p>
+
+<div ng-repeat="aprob in $ctrl.aprobaciones">
+  <h1>Fecha: {{aprob.fecha}}</h1>
+  <h2>Aprobación: {{aprob.aprobacion}}%</h1>
+  <h2>Desaprobación: {{aprob.desaprobacion}}%</h1>
+  <hr />
+</div>
+
+<div style="width: 100px; height: 100px; background-color: black; color: #fff;">
+asdasdas
+</div>
+
+<div id="chart_div"></div>
+
+<!--
+<ul>
+  <li ng-repeat="aprobacion in $ctrl.aprobaciones">
+    <span>{{aprobacion.fecha}}</span>
+    <p>{{aprobacion.aprobacion}}%</p>
+    <p>{{aprobacion.desaprobacion}}%</p>
+  </li>
+</ul>
+-->

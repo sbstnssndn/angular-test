@@ -1,0 +1,17 @@
+[
+	{
+		"fecha": "17/05",
+		"aprobacion": 55,
+		"desaprobacion": 45.6
+	},
+	{
+		"fecha": "17/06",
+		"aprobacion": 25,
+		"desaprobacion": 75
+	},
+	{
+		"fecha": "18/07",
+		"aprobacion": 45,
+		"desaprobacion": 55
+	}
+]
